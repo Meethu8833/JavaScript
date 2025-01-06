@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=parseInt(prompt("Enter the limit: "));
+        let f1=0;
+        let f2=1;
+        for (let a = 0; a < n; a++) {
+            if (a==0){
+                document.write(f1," ")
+            }
+            else if(a==1){
+                document.write(f2," ")
+            }
+            else{
+                let fib=f1+f2;
+                document.write(fib," ")
+                f1=f2
+                f2=fib
+
+            }
+                       
+        }
+    </script>
+</body>
+</html>
